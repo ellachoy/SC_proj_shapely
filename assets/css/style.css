@@ -10,6 +10,7 @@ p {
 }
 h2 {
   color: #0e1015;
+  font-size: 2em;
 }
 a {
   text-decoration: none;
@@ -28,7 +29,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: white;
-  /* z-index: 9999; */
+  z-index: 9999;
 }
 .logo {
   color: #666;
@@ -57,12 +58,16 @@ ul li i {
 nav i {
   color: blue;
 }
+/* background with Parallax effect */
 .we {
   background: url("../img/bild.jpeg") center/cover no-repeat;
-  min-height: 100vh;
+  width: 100%;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background-attachment: fixed;
 }
 .we div {
   color: white;
@@ -101,6 +106,189 @@ nav i {
 }
 #readmore:hover {
   background-color: #5234f9;
+}
+.SEO,
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12% 5%;
+}
+.SEO img,
+.portfolio img {
+  width: 50%;
+}
+.SEO div,
+.portfolio div {
+  width: 40%;
+  height: 60%;
+}
+.SEO p,
+.portfolio p {
+  width: 80%;
+  line-height: 27px;
+  margin-bottom: 10%;
+}
+.portfolio,
+.Limitless {
+  background-color: rgb(244, 244, 244);
+}
+
+/* background with Parallax effect */
+.SmallP {
+  background: url("../img/wave.jpeg") center/cover no-repeat;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-attachment: fixed;
+}
+.SmallP div {
+  color: white;
+  text-align: center;
+}
+.SmallP div h1 {
+  font-size: 4em;
+  padding: 0 10%;
+  margin-bottom: 0;
+}
+.SmallP div h6 {
+  font-size: 1em;
+  margin-bottom: 5%;
+  width: 60%;
+  padding: 0 20%;
+}
+.Limitless {
+  padding: 10% 5% 0;
+}
+.Limitless div {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.Limitless p {
+  line-height: 27px;
+  margin-bottom: 5%;
+  padding: 0 10%;
+}
+.Limitless #BG {
+  background: url(../img/forest.jpeg) center/cover no-repeat;
+  width: 100%;
+  height: 70vh;
+}
+/* bilder gallerie */
+
+.gallerie div {
+  text-align: center;
+  padding-top: 10%;
+}
+.gallerie div h1 {
+  font-size: 2em;
+}
+.gallerie div h6 {
+  font-size: 1em;
+}
+
+.gallerie {
+  background-color: rgb(19, 20, 27);
+  color: #fff;
+}
+.gallerie img {
+  width: 300px;
+  height: 200px;
+}
+.gallerie article {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(3, 200px);
+  justify-content: center;
+}
+.gallerie article .container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.overlay {
+  position: absolute;
+  width: 300px;
+  height: 170px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100%;
+  transition: all 1s linear;
+}
+.gallerie article .container:hover .overlay {
+  top: 0;
+}
+/* background with Parallax effect */
+.whatSay {
+  background: url("../img/sky.jpeg") center/cover no-repeat;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-attachment: fixed;
+}
+.whatSay div {
+  color: white;
+  text-align: center;
+}
+.whatSay div h1 {
+  font-size: 2em;
+  padding: 0 10%;
+  margin-bottom: 0;
+}
+.whatSay div h6 {
+  font-size: 1em;
+  margin-bottom: 5%;
+  width: 60%;
+  padding: 0 20%;
+}
+.clients {
+  padding-top: 7%;
+  text-align: center;
+  width: 100%;
+  height: 30vh;
+}
+/* awesome */
+.downl {
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+}
+.downl h1 {
+  font-size: 2em;
+}
+footer {
+  background-color: #0e1015;
+  color: #fff;
+  width: 100%;
+  height: 17vh;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 5%;
+}
+footer button {
+  background-color: #0e1015;
+  width: 5%;
+  height: 3vh;
+  border: 1px solid #8c979e;
+}
+footer button i {
+  color: #8c979e;
 }
 
 /* Die Farbe der Buttons “Read more” ist: #745cf9
