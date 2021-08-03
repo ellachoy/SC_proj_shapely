@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+}
+/* general effect */
+p {
+  color: #8c979e;
+}
+h2 {
+  color: #0e1015;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgray;
+  padding: 8px 45px;
+  height: 76px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  /* z-index: 9999; */
+}
+.logo {
+  color: #666;
+  font-size: 30px;
+  font-weight: 100;
+}
+/* .logo:hover {
+  color: #333;
+} */
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li a {
+  padding: 5px 15px;
+  color: black;
+  font-size: 15px;
+}
+ul li a:hover {
+  color: blue;
+}
+ul li i {
+  color: gray;
+}
+nav i {
+  color: blue;
+}
+.we {
+  background: url("../img/bild.jpeg") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.we div {
+  color: white;
+  text-align: center;
+}
+.we div h1 {
+  font-size: 4em;
+  padding: 0 10%;
+  margin-bottom: 0;
+}
+.we div h6 {
+  font-size: 1em;
+  margin-bottom: 5%;
+}
+#download,
+#readmore {
+  width: 10em;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+#download {
+  background-color: #f3f3f300;
+  padding: 15px 25px;
+  border: 2px solid #fff;
+  margin: 0.5%;
+}
+#download:hover {
+  color: #000;
+  background-color: #fff;
+}
+#readmore {
+  border: 1px solid #745cf9;
+  background-color: #745cf9;
+  padding: 15px 55px;
+}
+#readmore:hover {
+  background-color: #5234f9;
+}
+
+/* Die Farbe der Buttons “Read more” ist: #745cf9
+Die Hover-Farbe der Buttons “Read more” ist: #5234f9
+Die Farbe der <p> ist: #8c979e
+Die Farbe der <h2> ist: #0e1015  
+Die Links der Fotos:	
+Parallax Effekt machen mit: background-attachment: fixed; 
+ */
